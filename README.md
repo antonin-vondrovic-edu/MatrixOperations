@@ -1,3 +1,7 @@
+Antonín Vondrovic
+
+Daniel Křepelka
+
 # MatrixOperations
 ## TODO
 - [ ] Finish implementing the `MatrixtTest` test class.
