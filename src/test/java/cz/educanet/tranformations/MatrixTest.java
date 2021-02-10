@@ -63,25 +63,31 @@ public class MatrixTest {
 
     @Test
     public void times() {
+
     }
 
     @Test
     public void timesScalar() {
+
     }
 
     @Test
     public void add() {
+
     }
 
     @Test
     public void get() {
+
     }
 
     @Test
     public void transpose() {
+
     }
 
     @Test
     public void determinant() {
+        //hell o guys  ia ma XD kys @daniel.xldrip among us s
     }
 }
