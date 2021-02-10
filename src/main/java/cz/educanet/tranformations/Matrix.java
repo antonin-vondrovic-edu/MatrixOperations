@@ -27,22 +27,30 @@ public class Matrix implements IMatrix {
 
     @Override
     public IMatrix times(IMatrix matrix) {
+
         throw new NotImplementedError(); // TODO:
+
     }
 
     @Override
     public IMatrix times(Number scalar) {
+
         throw new NotImplementedError(); // TODO:
+
     }
 
     @Override
     public IMatrix add(IMatrix matrix) {
+
         throw new NotImplementedError(); // TODO:
+
     }
 
     @Override
     public double get(int n, int m) {
+
         throw new NotImplementedError(); // TODO:
+
     }
 
     //region Optional
