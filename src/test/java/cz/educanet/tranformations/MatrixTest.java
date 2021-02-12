@@ -78,7 +78,7 @@ public class MatrixTest {
 
     @Test
     public void timesScalar() {
-        int forScalar = 2;
+        int forScalar = 3;
         IMatrix timesScalarA = a.times(forScalar);
         IMatrix timesScalarB = b.times(forScalar);
         IMatrix timesScalarC = c.times(forScalar);
