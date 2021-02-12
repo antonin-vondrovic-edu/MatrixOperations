@@ -1,7 +1,5 @@
 package cz.educanet.tranformations;
 
-import kotlin.NotImplementedError;
-
 import java.util.Arrays;
 
 public class Matrix implements IMatrix {
@@ -40,9 +38,15 @@ public class Matrix implements IMatrix {
 
     @Override
     public IMatrix times(Number scalar) {
+        double[][] timesScalarSum = new double[getRows()][getColumns()];
 
-        throw new NotImplementedError(); // TODO:
+        for (int i = 0; i < getRows(); i++) {
+            for (int j = 0; j < getColumns(); j++) {
+                timesScalarSum[i][j] = get(i,j) * (int) scalar;
+            }
+        }
 
+        return MatrixFactory.create(timesScalarSum);
     }
 
     @Override
