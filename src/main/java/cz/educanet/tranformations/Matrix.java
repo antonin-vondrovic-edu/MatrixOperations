@@ -27,9 +27,15 @@ public class Matrix implements IMatrix {
 
     @Override
     public IMatrix times(IMatrix matrix) {
+        double[][] timesSum = new double[getRows()][getColumns()];
 
-        throw new NotImplementedError(); // TODO:
+        for (int i = 0; i < getRows(); i++) {
+            for (int j = 0; j < getColumns(); j++) {
+                timesSum[i][j] = matrix.get(i,j) * matrix.get(i,j);
+            }
+        }
 
+        return MatrixFactory.create(timesSum);
     }
 
     @Override
@@ -41,16 +47,20 @@ public class Matrix implements IMatrix {
 
     @Override
     public IMatrix add(IMatrix matrix) {
+        double[][] sum = new double[getRows()][getColumns()];
 
-        throw new NotImplementedError(); // TODO:
+        for (int i = 0; i < getRows(); i++) {
+            for (int j = 0; j < getColumns(); j++) {
+                sum[i][j] = matrix.get(i,j) + matrix.get(i,j);
+            }
+        }
 
+        return MatrixFactory.create(sum);
     }
 
     @Override
     public double get(int n, int m) {
-
-        throw new NotImplementedError(); // TODO:
-
+        return rawArray[n][m];
     }
 
     //region Optional
