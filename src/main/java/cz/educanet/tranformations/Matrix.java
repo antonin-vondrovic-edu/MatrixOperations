@@ -29,7 +29,7 @@ public class Matrix implements IMatrix {
 
         for (int i = 0; i < getRows(); i++) {
             for (int j = 0; j < getColumns(); j++) {
-                timesSum[i][j] = matrix.get(i,j) * matrix.get(i,j);
+                timesSum[i][j] = get(i,j) * matrix.get(i,j);
             }
         }
 
@@ -55,7 +55,7 @@ public class Matrix implements IMatrix {
 
         for (int i = 0; i < getRows(); i++) {
             for (int j = 0; j < getColumns(); j++) {
-                sum[i][j] = matrix.get(i,j) + matrix.get(i,j);
+                sum[i][j] = get(i,j) + matrix.get(i,j);
             }
         }
 
